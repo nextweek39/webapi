@@ -1,0 +1,31 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en" ng-app="crmApp">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Customer App</title>
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/Content/font-awesome.min.css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="col-md-2">
+            <i class="fa fa-anchor">sad</i>
+        </div>
+        <div class="col-md-10" style="background-color:red" ui-view></div>
+    </div>
+    
+    
+    <a ui-sref="home">Home</a>
+    <a ui-sref="login">Login</a>
+
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/angular-ui-router.min.js"></script>
+    <script src="~/Scripts/spa/app.js"></script>
+</body>
+</html>
