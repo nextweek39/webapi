@@ -1,22 +1,33 @@
-﻿var crmApp = angular.module("crmApp", ["ui.router"]);
+﻿(function () { 
+    "use strict";
+
+    angular.module("crmApp", ["ui.router"])
 
 
-crmApp.controller("LoginController", function () {
+    .controller("LoginController", function () {
 
-})
+    })
 
-crmApp.config(function ($stateProvider, $urlRouterProvider) {
-    $stateProvider
-        .state("login", {
-            url: "/login",
-            templateUrl : "Scripts/spa/views/login.html"
-        });
+    .config(function ($stateProvider, $urlRouterProvider) {
+        $stateProvider
+            .state("customer", {
+                url: "/customer",
+                templateUrl : "Scripts/spa/views/customer.html"
+            })
 
-    $stateProvider
-        .state("home", {
-            url: "/home",
-            templateUrl : "Scripts/spa/views/home.html"
-        })
+        $stateProvider
+            .state("home", {
+                url: "/home",
+                templateUrl : "Scripts/spa/views/home.html"
+            })
 
-    $urlRouterProvider.otherwise("/login");
-})
+        $stateProvider
+            .state("product", {
+                url: "/product",
+                templateUrl:"Scripts/spa/views/product.html"
+            })
+
+        $urlRouterProvider.otherwise("/home");
+    })
+
+})();

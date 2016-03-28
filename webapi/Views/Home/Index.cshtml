@@ -11,19 +11,20 @@
     <title>Customer App</title>
     <link rel="stylesheet" href="~/Content/bootstrap.min.css" />
     <link rel="stylesheet" href="~/Content/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/Content/Site.css" />
 </head>
 <body>
     <div class="container-fluid">
-        <div class="col-md-2">
-            <i class="fa fa-anchor">sad</i>
+        <div class="col-md-2 options">
+            <a ui-sref="home">Home</a>
+            <a ui-sref="customer">Customers</a>
+            <a ui-sref="product">Product</a>
         </div>
         <div class="col-md-10" style="background-color:red" ui-view></div>
     </div>
     
     
-    <a ui-sref="home">Home</a>
-    <a ui-sref="login">Login</a>
-
+   
     <script src="~/Scripts/angular.min.js"></script>
     <script src="~/Scripts/angular-ui-router.min.js"></script>
     <script src="~/Scripts/spa/app.js"></script>
