@@ -4,29 +4,35 @@
 }
 
 <!DOCTYPE html>
-<html lang="en" ng-app="crmApp">
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Customer App</title>
+    @* fonts *@
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" href="~/Content/bootstrap.min.css" />
     <link rel="stylesheet" href="~/Content/font-awesome.min.css" />
     <link rel="stylesheet" href="~/Content/Site.css" />
 </head>
-<body>
+<body ng-app="crmApp">
     <div class="container-fluid">
         <div class="col-md-2 options">
             <a ui-sref="home">Home</a>
             <a ui-sref="customer">Customers</a>
             <a ui-sref="product">Product</a>
         </div>
-        <div class="col-md-10" style="background-color:red" ui-view></div>
+        <div class="col-md-10" ui-view></div>
     </div>
     
     
-   
+   <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script src="~/Scripts/angular.min.js"></script>
     <script src="~/Scripts/angular-ui-router.min.js"></script>
+    <script src="~/Scripts/angular-animate.min.js"></script>
+    <script src="~/Scripts/angular-touch.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
     <script src="~/Scripts/spa/app.js"></script>
 </body>
 </html>

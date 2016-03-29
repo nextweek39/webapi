@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    font-family: 'Lato', sans-serif;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -22,4 +23,9 @@ div.options a{
     margin-top:1em;
     padding:0.5em;
     background-color:#e5e5e5;
+}
+
+body div.product form.modal-container{
+    width: 100%;
+    display: inline-block
 }
